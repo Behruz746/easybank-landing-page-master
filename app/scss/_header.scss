@@ -1,0 +1,41 @@
+.header {
+  nav {
+    padding: 24px;
+  }
+
+  &__logo {
+    img {
+      width: 139px;
+      height: auto;
+      user-select: none;
+    }
+  }
+
+  &__hamburger {
+    // '>' faqat to‘g‘ridan-to‘g‘ri farzand element bo‘lsa style ishlaydi.
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $darkBlue;
+
+      // :not(:last-child) → oxirgi farzand bo‘lmagan elementlarga tegishli pseudo-class.
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  // header links
+  &__links {
+    a {
+      font-size: $font-sm;
+      color: $grayishBlue;
+    }
+  }
+
+  &__cta {
+    font-size: $font-sm;
+    color: $white;
+  }
+}
