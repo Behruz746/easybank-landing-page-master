@@ -54,3 +54,20 @@ button,
   font-weight: 700;
   color: $white;
 }
+
+// visibility
+.hide-for-mobile {
+  // hide for tablete and mobile
+  @include breakepoints-down(medium) {
+    display: none;
+  }
+
+  // display: none;
+}
+
+.hide-for-desktop {
+  // hide for desktop viewport widths
+  @include breakepoints-up(large) {
+    display: none;
+  }
+}
